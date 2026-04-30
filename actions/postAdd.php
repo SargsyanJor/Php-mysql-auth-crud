@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "db.php";
+require_once "../db/db.php";
 
 if (isset($_POST["submit"])) {
     $_SESSION['old'] = $_POST;
@@ -20,7 +20,7 @@ if (isset($_POST["submit"])) {
 
     if (!empty($errors)) {
         $_SESSION['errors'] = $errors;
-        header("location: ../postAddPage.php");
+        header("location: ../public/postAddPage.php");
         exit();
     }
 
@@ -30,7 +30,7 @@ if (isset($_POST["submit"])) {
     if (mysqli_num_rows($result) > 0) {
         $errors['title'] = "Title is already taken";
         $_SESSION['errors'] = $errors;
-        header("location: ../postAddPage.php");
+        header("location: ../public/postAddPage.php");
         exit();
     }
 
@@ -43,7 +43,7 @@ if (isset($_POST["submit"])) {
         unset($_SESSION['errors']);
         unset($_SESSION['old']);
         $_SESSION['success'] = "Post created successfully";
-        header("location: ../postPage.php");
+        header("location: ../public/postPage.php");
         exit();
     } else {
         echo "Error: ";

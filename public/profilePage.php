@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 <body>
 <div class="container">
@@ -26,9 +26,9 @@
         </div>
 
         <div class="profile-footer">
-            <a href="postPage.php" class="btn-edit-profile">My posts</a>
+            <a href="../public/postPage.php" class="btn-edit-profile">My posts</a>
             <a href="allPostsPage.php" class="btn-edit-profile">All posts</a>
-            <a href="public/logout.php" class="have-acc logout-text">Logout</a>
+            <a href="../actions/logout.php" class="have-acc logout-text">Logout</a>
         </div>
     </div>
 </div>

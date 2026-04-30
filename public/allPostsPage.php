@@ -1,5 +1,5 @@
 <?php
-require_once("public/db.php");
+require_once("../db/db.php");
 
 $sql = "SELECT 
             posts.id,
@@ -20,7 +20,7 @@ $result = mysqli_query($conn, $sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recent Posts</title>
-    <link rel="stylesheet" href="css/allPostsPage.css">
+    <link rel="stylesheet" href="../assets/css/allPostsPage.css">
 </head>
 <body>
 
@@ -29,7 +29,7 @@ $result = mysqli_query($conn, $sql);
 
         <div class="header-inline">
             <h2 class="auth-title">Recent Posts</h2>
-            <a href="../profilePage.php" class="minimal-back-btn">Back to Profile</a>
+            <a href="profilePage.php" class="minimal-back-btn">Back to Profile</a>
         </div>
 
         <?php while ($row = mysqli_fetch_assoc($result)): ?>
@@ -71,7 +71,7 @@ $result = mysqli_query($conn, $sql);
 
                 <hr class="post-divider">
 
-                <form method="POST" action="public/add-comment.php" class="comment-form">
+                <form method="POST" action="../actions/add-comment.php" class="comment-form">
                     <input type="hidden" name="post_id" value="<?= $row['id'] ?>">
                     <div class="comment-group">
                         <input type="text" name="comment"

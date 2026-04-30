@@ -1,5 +1,5 @@
 <?php
-require_once("db.php");
+require_once("../db/db.php");
 session_start();
 
 if (isset($_POST["submit"])) {
@@ -34,7 +34,7 @@ if (isset($_POST["submit"])) {
             $_SESSION["email"] = $row["email"];
             $_SESSION['user_id'] = $row['id'];
             unset($_SESSION['errors']);
-            header("location: ../profilePage.php");
+            header("location: ../public/profilePage.php");
             exit();
         } else {
             $errors['password'] = "Wrong password";

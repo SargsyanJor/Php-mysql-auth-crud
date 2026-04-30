@@ -18,7 +18,7 @@ body {
     max-width: 650px;
 }
 
-/* Header layout - Սա կոճակը բերում է վերնագրի կողք */
+
 .header-inline {
     display: flex;
     justify-content: space-between;
@@ -86,7 +86,7 @@ body {
     border-radius: 15px;
     margin-bottom: 6px;
     font-size: 14px;
-    display: inline-block; /* Սարքում ենք ավելի սիրուն 'bubble' */
+    display: inline-block;
     max-width: 90%;
 }
 

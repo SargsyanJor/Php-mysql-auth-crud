@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once("db.php");
+require_once("../db/db.php");
 
 if(isset($_POST['submit'])) {
     $post_id = $_POST['post_id'];
@@ -12,9 +12,8 @@ if(isset($_POST['submit'])) {
     $result = mysqli_query($conn, $sql);
 
     if($result) {
-        header("location: ../allPostsPage.php");
+        header("location: ../public/allPostsPage.php");
         exit();
     }
-
 
 }

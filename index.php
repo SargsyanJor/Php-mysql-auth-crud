@@ -7,7 +7,7 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="assets/css/index.css">
     </head>
     <body>
 
@@ -21,7 +21,7 @@
 
         <h2 class="auth-title">Registration Page</h2>
 
-        <form action="public/register.php" method="post" class="registration-form">
+        <form action="actions/register.php" method="post" class="registration-form">
 
             <div class="form-group">
                 <label for="first_name">First Name</label>
@@ -69,7 +69,7 @@
                 <span class="error-message"><?= $_SESSION['errors']['password_confirm'] ?? '' ?></span>
             </div>
 
-            <a href="loginPage.php" class="have-acc" >I already have an account</a>
+            <a href="public/loginPage.php" class="have-acc" >I already have an account</a>
 
             <button name="submit" class="btn-submit">Register</button>
 

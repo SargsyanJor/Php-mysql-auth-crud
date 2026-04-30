@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "db.php";
+require_once "../db/db.php";
 
 
 if (isset($_POST['submit'])) {
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 
     if ($result) {
         $_SESSION['success'] = "Post Updated";
-        header("Location: ../postPage.php");
+        header("Location: ../public/postPage.php");
         exit();
     } else {
         echo "Error: " . mysqli_error($conn);

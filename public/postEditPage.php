@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "public/db.php";
+require_once "../db/db.php";
 $user_id = $_GET['id'];
 
 $sql = "SELECT * FROM posts WHERE id = '$user_id'";
@@ -16,7 +16,7 @@ $row = mysqli_fetch_assoc($result);
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/postEdit.css">
+    <link rel="stylesheet" href="../assets/css/postEdit.css">
 </head>
 <body>
 <div class="form-container">
@@ -25,7 +25,7 @@ $row = mysqli_fetch_assoc($result);
             <h2>Edit post</h2>
         </div>
 
-        <form action="public/postEdit.php" method="post">
+        <form action="../actions/postEdit.php" method="post">
             <input type="hidden" name="id" value="<?= $user_id ?>">
 
             <div class="form-group">

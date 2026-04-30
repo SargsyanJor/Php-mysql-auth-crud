@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/postAdd.css">
+    <link rel="stylesheet" href="../assets/css/postAdd.css">
 </head>
 <body>
 <div class="form-container">
@@ -16,7 +16,7 @@
             <h2 style="margin: 0; font-size: 20px;">New Post</h2>
         </div>
 
-        <form action="public/postAdd.php" method="post">
+        <form action="../actions/postAdd.php" method="post">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text"

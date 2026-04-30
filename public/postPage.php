@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("public/db.php");
+require_once("../db/db.php");
 
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -20,7 +20,7 @@ $result = mysqli_query($conn, $sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="../assets/css/post.css">
 </head>
 <body>
 
@@ -35,7 +35,7 @@ $result = mysqli_query($conn, $sql);
 
             <hr style="border: 0; border-top: 1px solid #f0f2f5; margin: 15px 0;">
 
-            <a href="public/logout.php" class="logout-link">Logout</a>
+            <a href="../actions/logout.php" class="logout-link">Logout</a>
         </div>
 
         <?php if (isset($_SESSION['success'])): ?>
@@ -66,7 +66,7 @@ $result = mysqli_query($conn, $sql);
                             <a href="postEditPage.php?id=<?= $row['id'] ?>" class="btn-edit">
                                 Edit
                             </a>
-                            <a href="public/postDelete.php?id=<?= $row['id'] ?>"
+                            <a href="../actions/postDelete.php?id=<?= $row['id'] ?>"
                                class="btn-delete">
                                 Delete
                             </a>
