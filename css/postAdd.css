@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    color: #1c1e21;
+    line-height: 1.5;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+
+.profile-card, .post-card, .form-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.profile-card, .form-card {
+    padding: 25px;
+}
+
+.post-card {
+    padding: 24px;
+    position: relative;
+    border-left: 4px solid #00a400;
+    margin-bottom: 20px;
+}
+
+
+.profile-sidebar {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.avatar-circle {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #00a400, #008a00);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.user-role {
+    font-size: 13px;
+    color: #65676b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1c1e21;
+    margin-bottom: 10px;
+}
+
+.post-description {
+    font-size: 15px;
+    color: #4b4f56;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b4f56;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    padding: 12px 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: #00a400;
+    box-shadow: 0 0 0 2px rgba(0, 164, 0, 0.1);
+}
+
+/* 7. Կոճակներ */
+.btn-add, .btn-submit {
+    background-color: #00a400;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-align: center;
+}
+
+.btn-add:hover, .btn-submit:hover {
+    background-color: #008a00;
+}
+
+.btn-submit {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.btn-edit {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0f9f0;
+    color: #00a400;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.btn-edit:hover {
+    background-color: #00a400;
+    color: white;
+}
+
+.logout-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #f02849;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-back {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #606770;
+    font-size: 14px;
+}
+
+
+.error-text {
+    color: #f02849;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #f0f2f5;
+    padding-top: 15px;
+}

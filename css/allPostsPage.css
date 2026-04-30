@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #1c1e21;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Header layout - Սա կոճակը բերում է վերնագրի կողք */
+.header-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.auth-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1c1e21;
+}
+
+/* Կոճակի դիզայնը */
+.minimal-back-btn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1877f2;
+    padding: 8px 14px;
+    background-color: #e7f3ff;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.minimal-back-btn:hover {
+    background-color: #dbeafe;
+}
+
+/* Post Card */
+.post-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddfe2;
+}
+
+.post-author {
+    font-size: 13px;
+    font-weight: 600;
+    color: #65676b;
+    text-transform: uppercase;
+}
+
+.post-title {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.post-text {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* Comments */
+.comments-section-list {
+    margin-top: 15px;
+}
+
+.comment-item {
+    background: #f0f2f5;
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    display: inline-block; /* Սարքում ենք ավելի սիրուն 'bubble' */
+    max-width: 90%;
+}
+
+.post-divider {
+    border: 0;
+    border-top: 1px solid #e4e6eb;
+    margin: 15px 0;
+}
+
+/* Form */
+.comment-group {
+    display: flex;
+    gap: 8px;
+}
+
+.comment-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 20px;
+    background: #f0f2f5;
+    outline: none;
+}
+
+.btn-send {
+    background: #00a400;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.header-inline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+
+.auth-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #4b4f56;
+    margin: 0;
+}
+
+
+.minimal-back-btn {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1877f2;
+    padding: 6px 12px;
+    background-color: #e7f3ff;
+    border-radius: 6px;
+    border: 1px solid rgba(24, 119, 242, 0.2);
+    transition: all 0.2s ease;
+}
+
+.minimal-back-btn:hover {
+    background-color: #1877f2;
+    color: #fff;
+}
